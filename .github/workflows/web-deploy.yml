@@ -11,7 +11,8 @@ jobs:
       my_secret: ${{ secrets.ACCESS_TOKEN }}
     
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Install Flutter
         uses: subosito/flutter-action@v2
