@@ -49,4 +49,4 @@ jobs:
           echo "Committing to gh-pages: ${{ github.event.head_commit.message }}"
           echo ""
           git commit -m "${{ github.event.head_commit.message }}"
-          git push -u origin gh-pages
+          git push origin gh-pages
