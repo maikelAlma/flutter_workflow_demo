@@ -3,7 +3,7 @@ name: Flutter Workflow
 on: [push, workflow_dispatch]
 jobs:
   build:
-    run-on: macos-latest
+    runs-on: macos-latest
     steps: 
       - name: Checkout code
         uses: actions/checkout@v3
