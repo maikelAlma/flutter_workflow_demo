@@ -26,12 +26,12 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('home page changed'),
+        child: Text('home page'),
       ),
     );
   }
