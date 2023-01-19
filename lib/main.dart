@@ -29,21 +29,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Text('home page changed'),
-            AnimatedIcon(
-              icon: AnimatedIcons.add_event,
-              progress: AnimationController(
-                vsync: this,
-                duration: const Duration(seconds: 1),
-              ),
-            ),
-          ],
-        ),
+        child: Text('home page'),
       ),
     );
   }
