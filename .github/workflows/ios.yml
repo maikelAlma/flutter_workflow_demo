@@ -2,7 +2,7 @@ name: Flutter build and publish (ios)
 
 on:
   push:
-    branchs: [ build-ios ]
+    branches: [ build-ios ]
 
 jobs:
   build:
