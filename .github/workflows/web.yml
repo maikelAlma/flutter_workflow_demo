@@ -2,7 +2,7 @@ name: Flutter build and publish (Web)
 
 on:
   push:
-    branches: [ main ]
+    branches: [ build-web ]
 
 jobs:
   build:
