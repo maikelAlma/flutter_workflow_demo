@@ -32,9 +32,9 @@ jobs:
           #! Update with your Email ID associated with GitHub
           git config --global user.email maikelyordanalmaralesleyva@gmail.com
           #! Update with your username associated with GitHub
-          git init
           git config --global user.name maikelAlma
           git config --global init.defaultBranch main
+          git init
           # the repository to push the deploy into
           #! Update the following with your username and repository
           git remote add origin https://${{secrets.ACCESS_TOKEN}}@github.com/maikelAlma/flutter_workflow_demo.git
