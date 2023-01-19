@@ -30,7 +30,7 @@ jobs:
                 github_token: ${{secrets.ACCESS_TOKEN}}
                 publish_dir: ./build/web
 
-    
+  android:
     name: Flutter build ( android )
       runs-on: ubuntu-latest
       env:
