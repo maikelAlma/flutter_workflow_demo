@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@master
         with:
           name: apk-build
-          path: build/app/outputs/apk/release
+          path: build/app/outputs/bundle/release
   deploy:
     name: Deploy beta to Firebase
     needs: [build]
@@ -45,9 +45,9 @@ jobs:
         with:
           name: apk-build
       - name: Upload APK
-          uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
-          with:
-            appId: ${{secrets.FIREBASE_ANDROID_APPID}}
-            token: ${{secrets.FIREBASE_TOKEN}}
-            group: testers
-            file: app-release.aap
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
+        with:
+          appId: ${{secrets.FIREBASE_ANDROID_APPID}}
+          token: ${{secrets.FIREBASE_TOKEN}}
+          group: testers
+          file: app-release.aap
