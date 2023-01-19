@@ -47,9 +47,7 @@ jobs:
       - name: Upload APK
         uses: wzieba/Firebase-Distribution-Github-Action@v1.0.0
         with:
-          # appId: ${{secrets.FIREBASE_ANDROID_APPID}}
-          appId: 1:915877874882:android:de697fc904154f7176ff5b
-          # token: ${{secrets.FIREBASE_TOKEN}}
-          token: BIjTDFzNSWWu5odU-k997PEsa7885wNf9AJCcCG4J5x1G49bBTpeMIIai49Bj_aBjFGWTTR81I0js8eoJCIKXf0
+          appId: ${{secrets.FIREBASE_ANDROID_APPID}}
+          token: ${{secrets.FIREBASE_TOKEN}}
           group: testers
           file: app-release.aap
