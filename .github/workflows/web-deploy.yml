@@ -30,7 +30,7 @@ jobs:
           mkdir web-deploy
           cd web-deploy
           #! Update with your Email ID associated with GitHub
-          git config --global user.email maikelyordanalmarales@gmail.com
+          git config --global user.email maikelyordanalmaralesleyva@gmail.com
           #! Update with your username associated with GitHub
           git config --global user.name maikelAlma
           git config --global init.defaultBranch main
