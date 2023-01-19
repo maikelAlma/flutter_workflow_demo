@@ -2,7 +2,7 @@ name: Deploy Android app
 
 on:
   push:
-    branch: 'android-d'
+    branchs: [ android-d ]
 
 jobs:
   build:
